@@ -1,0 +1,19 @@
+<ModMetaData>
+    <name>Electric Repair Kits</name>
+    <author>Broms</author>
+    <packageId>Broms.ElectricRepairKits</packageId>
+    <supportedVersions>
+        <li>1.1</li>
+        <li>1.2</li>
+        <li>1.3</li>
+    </supportedVersions>
+    <description>A mod that adds a cheap repair kit that is used instead of components to repair buildings when they breakdown.</description>
+    <modDependencies>
+        <li>
+            <packageId>brrainz.harmony</packageId>
+            <displayName>Harmony</displayName>
+            <downloadUrl>https://github.com/pardeike/HarmonyRimWorld/releases/latest</downloadUrl>
+            <steamWorkshopUrl>https://steamcommunity.com/workshop/filedetails/?id=2009463077</steamWorkshopUrl>
+        </li>
+    </modDependencies>
+</ModMetaData>

@@ -1,0 +1,124 @@
+<Defs>
+    <ThingDef ParentName="ResourceBase">
+        <defName>Broms_RepairKit</defName>
+        <label>electronic repair kit</label>
+        <description>A small repair kit containing silver for electronic solding and some tools.</description>
+        <graphicData>
+            <texPath>Things/Item/Broms_RepairKit</texPath>
+            <graphicClass>Graphic_Single</graphicClass>
+        </graphicData>
+        <soundInteract>Metal_Drop</soundInteract>
+        <soundDrop>Standard_Drop</soundDrop>
+        <stackLimit>50</stackLimit>
+        <healthAffectsPrice>false</healthAffectsPrice>
+        <statBases>
+            <MaxHitPoints>70</MaxHitPoints>
+            <MarketValue>15</MarketValue>
+            <Mass>0.6</Mass>
+            <Flammability>0.6</Flammability>
+            <DeteriorationRate>2.0</DeteriorationRate>
+        </statBases>
+        <intricate>true</intricate>
+        <thingCategories>
+            <li>Manufactured</li>
+        </thingCategories>
+        <allowedArchonexusCount>10</allowedArchonexusCount>
+    </ThingDef>
+
+    <RecipeDef>
+        <defName>Broms_Make_RepairKit</defName>
+        <label>make repair kit</label>
+        <description>Make a repair kit.</description>
+        <jobString>Making repair kit.</jobString>
+        <workSpeedStat>GeneralLaborSpeed</workSpeedStat>
+        <effectWorking>Cook</effectWorking>
+        <soundWorking>Recipe_Machining</soundWorking>
+        <workAmount>1500</workAmount>
+    		<unfinishedThingDef>UnfinishedComponent</unfinishedThingDef>
+        <recipeUsers>
+            <li>TableMachining</li>
+            <li>FueledSmithy</li>
+            <li>ElectricSmithy</li>
+        </recipeUsers>
+          <ingredients>
+            <li>
+              <filter>
+              <thingDefs>
+                <li>Steel</li>
+              </thingDefs>
+              </filter>
+              <count>3</count>
+            </li>
+            <li>
+              <filter>
+              <thingDefs>
+                <li>Silver</li>
+              </thingDefs>
+              </filter>
+              <count>.3</count>
+            </li>
+          </ingredients>
+        <fixedIngredientFilter>
+          <thingDefs>
+            <li>Steel</li>
+				    <li>Silver</li>
+          </thingDefs>
+        </fixedIngredientFilter>
+        <products>
+          <Broms_RepairKit>1</Broms_RepairKit>
+        </products>
+        <skillRequirements>
+          <Crafting>4</Crafting>
+        </skillRequirements>
+        <workSkill>Crafting</workSkill>
+        <researchPrerequisite>Electricity</researchPrerequisite>
+      </RecipeDef>
+
+      <RecipeDef>
+        <defName>Broms_Make_RepairKit_Bulk</defName>
+        <label>make repair kit x4</label>
+        <description>Make four repair kitss.</description>
+        <jobString>Making four repair kits.</jobString>
+        <workSpeedStat>GeneralLaborSpeed</workSpeedStat>
+        <effectWorking>Cook</effectWorking>
+        <soundWorking>Recipe_Machining</soundWorking>
+        <workAmount>5000</workAmount>
+    		<unfinishedThingDef>UnfinishedComponent</unfinishedThingDef>
+        <recipeUsers>
+            <li>TableMachining</li>
+        </recipeUsers>
+          <ingredients>
+            <li>
+              <filter>
+              <thingDefs>
+                <li>Steel</li>
+              </thingDefs>
+              </filter>
+              <count>12</count>
+            </li>
+            <li>
+              <filter>
+              <thingDefs>
+                <li>Silver</li>
+              </thingDefs>
+              </filter>
+              <count>1.2</count>
+            </li>
+          </ingredients>
+        <fixedIngredientFilter>
+          <thingDefs>
+            <li>Steel</li>
+				    <li>Silver</li>
+          </thingDefs>
+        </fixedIngredientFilter>
+        <products>
+          <Broms_RepairKit>4</Broms_RepairKit>
+        </products>
+        <skillRequirements>
+          <Crafting>4</Crafting>
+        </skillRequirements>
+        <workSkill>Crafting</workSkill>
+        <researchPrerequisite>Electricity</researchPrerequisite>
+      </RecipeDef>
+
+</Defs>
